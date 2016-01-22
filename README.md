@@ -13,8 +13,7 @@ The scheduling of an alarm utilizes two main files:
 
 In order to make the process of creating the Linux cronjobs as easy as possible I have created an automation script that will SSH into your sever (Rasberry Pi in this case) and create the necessary cronjob. This script should be installed on a client machine (i.e your laptop) that has the ability to connect to your Linux server.
 
-!(https://cloud.githubusercontent.com/assets/8610203/12501032/65b73e4c-c07e-11e5-8e6a-35dc396ac544.png)
-
+![Screenshot](https://cloud.githubusercontent.com/assets/8610203/12501032/65b73e4c-c07e-11e5-8e6a-35dc396ac544.png)
 
 The cronjobs will utilize the 24-hour clock so it you're like me and are not used to that format I have included a list of the 12-hour clock equivalents.
 
