@@ -1,5 +1,5 @@
 # Phillips Hue Alarm
-After having reliability issues with setting an alarm in the offical [Phillips Hue app](https://itunes.apple.com/us/app/philips-hue/id557206189?mt=8) I decided to
+After having reliability issues with setting an alarm in the official [Phillips Hue app](https://itunes.apple.com/us/app/philips-hue/id557206189?mt=8) I decided to
 create a Python script that will automatically turn on my Phillips Hue bulb at a certain hour by utilizing a [Linux cronjob](https://en.wikipedia.org/wiki/Cron). For this particular setup
 I am utilizing a [Rasberry Pi](http://www.amazon.com/Raspberry-Pi-Model-Project-Board/dp/B00T2U7R7I/ref=sr_1_4?s=pc&ie=UTF8&qid=1453429240&sr=1-4&keywords=raspberry+pi) as my Linux server.
 
@@ -13,11 +13,12 @@ The scheduling of an alarm utilizes two main files:
 
 In order to make the process of creating the Linux cronjobs as easy as possible I have created an automation script that will SSH into your sever (Rasberry Pi in this case) and create the necessary cronjob. This script should be installed on a client machine (i.e your laptop) that has the ability to connect to your Linux server.
 
-[https://cloud.githubusercontent.com/assets/8610203/12501032/65b73e4c-c07e-11e5-8e6a-35dc396ac544.png]
+!(https://cloud.githubusercontent.com/assets/8610203/12501032/65b73e4c-c07e-11e5-8e6a-35dc396ac544.png)
+
 
 The cronjobs will utilize the 24-hour clock so it you're like me and are not used to that format I have included a list of the 12-hour clock equivalents.
 
-In order to update the scrip to work in your environment you will need to update the following:
+In order to update the script to work in your environment you will need to update the following:
 
 * *Line 15*
 ```python
